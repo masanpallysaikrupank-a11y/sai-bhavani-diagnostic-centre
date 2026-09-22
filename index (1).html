@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SAI Bhavani Diagnostic Centre - Diagnostic laboratory services, home sample collection and test booking in Sanath Nagar, Hyderabad.">
+  <meta name="theme-color" content="#0b78c8">
+  <title>SAI Bhavani Diagnostic Centre | Sanath Nagar, Hyderabad</title>
+  <style>
+    :root{--blue:#0b78c8;--dark:#073b66;--light:#eef8ff;--text:#17324d;--muted:#64788a;--white:#fff;--border:#dbeaf4;--shadow:0 12px 35px rgba(7,59,102,.10)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#f8fcff;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 2px 18px rgba(0,0,0,.06)}
+    nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--dark)}
+    .logo-icon{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#0b78c8,#27b9ed);color:white;display:grid;place-items:center;font-size:25px;font-weight:900}
+    .logo span{font-size:15px;line-height:1.15}.logo small{display:block;color:var(--blue);font-weight:600;margin-top:3px}
+    .navlinks{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:700}
+    .navlinks a:hover{color:var(--blue)}
+    .menu{display:none;border:0;background:none;font-size:27px;color:var(--dark);cursor:pointer}
+    .hero{background:linear-gradient(135deg,#e9f7ff 0%,#fff 52%,#eaf8ff 100%);padding:75px 0 65px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+    .badge{display:inline-block;background:#dff2ff;color:var(--blue);padding:8px 14px;border-radius:30px;font-size:13px;font-weight:800;margin-bottom:17px}
+    h1{font-size:clamp(36px,5vw,60px);line-height:1.06;color:var(--dark);margin-bottom:18px}
+    h1 span{color:var(--blue)}
+    .hero p{font-size:18px;color:var(--muted);max-width:650px;margin-bottom:28px}
+    .buttons{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:12px;padding:13px 20px;font-weight:800;cursor:pointer;transition:.2s}
+    .btn-primary{background:var(--blue);color:white;box-shadow:0 8px 20px rgba(11,120,200,.2)}
+    .btn-primary:hover{transform:translateY(-2px);background:#0868ad}
+    .btn-outline{border:1px solid #a9d8f2;color:var(--blue);background:white}
+    .hero-card{background:white;border:1px solid var(--border);border-radius:25px;padding:30px;box-shadow:var(--shadow);position:relative}
+    .medical-circle{width:145px;height:145px;border-radius:50%;margin:0 auto 22px;background:#e7f7ff;display:grid;place-items:center;font-size:72px}
+    .hero-card h3{text-align:center;color:var(--dark);margin-bottom:8px}
+    .hero-card p{text-align:center;color:var(--muted);font-size:14px}
+    .stats{margin-top:-25px;position:relative;z-index:2}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);background:white;border-radius:18px;box-shadow:var(--shadow);border:1px solid var(--border);overflow:hidden}
+    .stat{padding:22px;text-align:center;border-right:1px solid var(--border)}.stat:last-child{border:0}
+    .stat strong{display:block;font-size:25px;color:var(--blue)}.stat span{font-size:13px;color:var(--muted)}
+    section{padding:78px 0}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 38px}.section-head h2{font-size:34px;color:var(--dark);margin-bottom:9px}.section-head p{color:var(--muted)}
+    .tests{background:white}
+    .tools{display:flex;gap:12px;max-width:820px;margin:0 auto 28px;flex-wrap:wrap}
+    input,select,textarea{width:100%;padding:13px 14px;border:1px solid #cfe2ee;border-radius:10px;background:white;color:var(--text);font:inherit;outline:none}
+    input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(11,120,200,.08)}
+    .search{flex:1;min-width:220px}.filter{width:210px}
+    .test-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .test-card{padding:19px;border:1px solid var(--border);border-radius:15px;background:#fbfeff;transition:.2s}
+    .test-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#b6def3}
+    .test-icon{font-size:25px;margin-bottom:8px}.test-card h3{font-size:16px;color:var(--dark);margin-bottom:5px}.test-card p{font-size:12px;color:var(--muted)}
+    .packages{background:var(--light)}
+    .package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .package{background:white;border-radius:18px;padding:26px;border:1px solid var(--border);box-shadow:0 8px 25px rgba(7,59,102,.06)}
+    .package h3{color:var(--dark);margin-bottom:8px}.package p{font-size:13px;color:var(--muted);margin-bottom:14px}.package ul{list-style:none;margin-bottom:18px}.package li{font-size:13px;padding:6px 0;border-bottom:1px solid #edf4f8}.package li:before{content:"✓";color:var(--blue);font-weight:800;margin-right:8px}
+    .forms{background:white}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.form-card{border:1px solid var(--border);border-radius:18px;padding:27px;box-shadow:0 8px 25px rgba(7,59,102,.05)}.form-card h3{color:var(--dark);margin-bottom:7px}.form-card>p{color:var(--muted);font-size:13px;margin-bottom:20px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field-full{grid-column:1/-1}.form-card .btn{width:100%;margin-top:15px}
+    .about{background:linear-gradient(135deg,#073b66,#0b78c8);color:white}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about h2{font-size:36px;margin-bottom:14px}.about p{color:#dcefff;margin-bottom:15px}.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}.checks div{font-size:14px}.checks span{display:inline-grid;place-items:center;width:23px;height:23px;border-radius:50%;background:rgba(255,255,255,.18);margin-right:7px}
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.contact-box{background:white;border:1px solid var(--border);padding:24px;border-radius:16px;text-align:center}.contact-box .big{font-size:30px}.contact-box h3{font-size:16px;color:var(--dark);margin:5px}.contact-box p{font-size:13px;color:var(--muted)}
+    footer{background:#062e4f;color:#d9edfa;padding:30px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-row p{font-size:12px}
+    .floating{position:fixed;right:20px;bottom:20px;z-index:999;display:flex;flex-direction:column;gap:10px}.float-btn{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:white;font-size:23px;box-shadow:0 8px 20px rgba(0,0,0,.2)}.wa{background:#25d366}.call{background:#0b78c8}
+    .modal{display:none;position:fixed;inset:0;background:rgba(2,29,49,.65);z-index:2000;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modal-box{background:white;max-width:440px;width:100%;border-radius:20px;padding:30px;text-align:center}.modal-box .ok{font-size:50px}.modal-box h3{color:var(--dark);margin:5px}.modal-box p{color:var(--muted);font-size:14px;margin:10px 0 20px}
+    .hidden{display:none!important}
+    @media(max-width:900px){.hero-grid,.about-grid{grid-template-columns:1fr}.test-grid{grid-template-columns:repeat(2,1fr)}.package-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.navlinks{display:none;position:absolute;top:74px;left:0;right:0;background:white;padding:20px;box-shadow:0 10px 20px rgba(0,0,0,.08);flex-direction:column}.navlinks.open{display:flex}.menu{display:block}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--border)}}
+    @media(max-width:560px){section{padding:58px 0}.hero{padding:52px 0}.hero-card{padding:22px}.test-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.field-full{grid-column:auto}.contact-grid{grid-template-columns:1fr}.checks{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr 1fr}.stat{padding:16px 8px}.stat strong{font-size:21px}.footer-row{flex-direction:column;text-align:center}h1{font-size:40px}}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#home">
+        <div class="logo-icon">+</div>
+        <div>SAI Bhavani<br><small>Diagnostic Centre</small></div>
+      </a>
+      <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+      <div class="navlinks" id="navlinks">
+        <a href="#home">Home</a><a href="#tests">Tests</a><a href="#packages">Packages</a>
+        <a href="#booking">Book Test</a><a href="#reports">Reports</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">🧪 Trusted Diagnostic Services</span>
+      <h1>Your Health,<br><span>Our Priority.</span></h1>
+      <p>SAI Bhavani Diagnostic Centre provides convenient diagnostic testing with simple booking and home sample collection in Sanath Nagar, Hyderabad.</p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#booking">📅 Book a Test</a>
+        <a class="btn btn-outline" href="tel:+919849247320">☎️ Call 9849247320</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="medical-circle">🩺</div>
+      <h3>Accurate • Convenient • Caring</h3>
+      <p>Book your diagnostic test and contact our centre for sample collection and report assistance.</p>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="container stats-grid">
+    <div class="stat"><strong>17+</strong><span>Diagnostic Tests</span></div>
+    <div class="stat"><strong>Home</strong><span>Sample Collection</span></div>
+    <div class="stat"><strong>Easy</strong><span>Online Booking</span></div>
+    <div class="stat"><strong>Local</strong><span>Sanath Nagar Service</span></div>
+  </div>
+</div>
+
+<section class="tests" id="tests">
+  <div class="container">
+    <div class="section-head"><h2>Our Diagnostic Tests</h2><p>Search our available laboratory tests and choose a test to start your booking.</p></div>
+    <div class="tools">
+      <input class="search" id="testSearch" type="search" placeholder="🔎 Search a test, e.g. Vitamin D">
+      <select class="filter" id="testFilter"><option value="all">All Tests</option><option value="blood">Blood Tests</option><option value="special">Specialized Tests</option><option value="infection">Infection Tests</option></select>
+    </div>
+    <div class="test-grid" id="testGrid">
+      <article class="test-card" data-category="blood"><div class="test-icon">🩸</div><h3>CBP</h3><p>Complete Blood Picture</p></article>
+      <article class="test-card" data-category="blood"><div class="test-icon">🩸</div><h3>ESR</h3><p>Erythrocyte Sedimentation Rate</p></article>
+      <article class="test-card" data-category="blood"><div class="test-icon">☀️</div><h3>Vitamin D</h3><p>Vitamin D assessment</p></article>
+      <article class="test-card" data-category="blood"><div class="test-icon">💊</div><h3>Vitamin B12</h3><p>Vitamin B12 assessment</p></article>
+      <article class="test-card" data-category="blood"><div class="test-icon">🧪</div><h3>CRP</h3><p>C-Reactive Protein</p></article>
+      <article class="test-card" data-category="blood"><div class="test-icon">🧫</div><h3>RFT</h3><p>Renal Function Test</p></article>
+      <article class="test-card" data-category="blood"><div class="test-icon">🧪</div><h3>LFT</h3><p>Liver Function Test</p></article>
+      <article class="test-card" data-category="blood"><div class="test-icon">🦴</div><h3>Serum Calcium</h3><p>Calcium level assessment</p></article>
+      <article class="test-card" data-category="blood"><div class="test-icon">🧪</div><h3>Serum Creatinine</h3><p>Creatinine level assessment</p></article>
+      <article class="test-card" data-category="infection"><div class="test-icon">🔬</div><h3>HIV</h3><p>HIV testing</p></article>
+      <article class="test-card" data-category="blood"><div class="test-icon">🧪</div><h3>Uric Acid</h3><p>Uric acid level</p></article>
+      <article class="test-card" data-category="blood"><div class="test-icon">🩸</div><h3>Platelet Count</h3><p>Platelet measurement</p></article>
+      <article class="test-card" data-category="blood"><div class="test-icon">🩸</div><h3>Blood Group</h3><p>ABO and Rh typing</p></article>
+      <article class="test-card" data-category="blood"><div class="test-icon">❤️</div><h3>Cholesterol Test</h3><p>Cholesterol assessment</p></article>
+      <article class="test-card" data-category="special"><div class="test-icon">🧠</div><h3>CSF Analysis</h3><p>Cerebrospinal fluid analysis</p></article>
+      <article class="test-card" data-category="infection"><div class="test-icon">🦠</div><h3>COVID-19 Testing</h3><p>Coronavirus testing</p></article>
+      <article class="test-card" data-category="special"><div class="test-icon">🧬</div><h3>Erythropoietin (EPO)</h3><p>EPO level assessment</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="packages" id="packages">
+  <div class="container">
+    <div class="section-head"><h2>Health Packages</h2><p>Convenient combinations for routine health screening. Contact the centre for current pricing and preparation instructions.</p></div>
+    <div class="package-grid">
+      <div class="package"><h3>Basic Health Check</h3><p>Common tests for a routine health check.</p><ul><li>CBP</li><li>ESR</li><li>Blood Group</li><li>Serum Creatinine</li></ul><button class="btn btn-primary packageBtn" data-package="Basic Health Check">Book Package</button></div>
+      <div class="package"><h3>Wellness Check</h3><p>A broader routine screening combination.</p><ul><li>CBP</li><li>Vitamin D</li><li>Vitamin B12</li><li>Cholesterol Test</li><li>Serum Calcium</li></ul><button class="btn btn-primary packageBtn" data-package="Wellness Check">Book Package</button></div>
+      <div class="package"><h3>Complete Screening</h3><p>Multiple routine laboratory assessments.</p><ul><li>CBP</li><li>ESR</li><li>RFT</li><li>LFT</li><li>Uric Acid</li><li>Cholesterol Test</li></ul><button class="btn btn-primary packageBtn" data-package="Complete Screening">Book Package</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="forms" id="booking">
+  <div class="container">
+    <div class="section-head"><h2>Book a Test</h2><p>Submit your details. Your booking information will be prepared for WhatsApp notification to the centre.</p></div>
+    <div class="form-grid">
+      <div class="form-card">
+        <h3>📅 Test Booking</h3><p>Enter the patient's details and preferred appointment information.</p>
+        <form id="bookingForm">
+          <div class="fields">
+            <div><input id="patientName" required placeholder="Patient name"></div>
+            <div><input id="mobile" required type="tel" pattern="[0-9]{10}" placeholder="10-digit mobile"></div>
+            <div><select id="testChoice" required><option value="">Select test</option><option>CBP</option><option>ESR</option><option>Vitamin D</option><option>Vitamin B12</option><option>CRP</option><option>RFT</option><option>LFT / Liver Function Test</option><option>Serum Calcium</option><option>Serum Creatinine</option><option>HIV</option><option>Uric Acid</option><option>Platelet Count</option><option>Blood Group</option><option>Cholesterol Test</option><option>CSF Analysis</option><option>Coronavirus (COVID-19) Testing</option><option>Erythropoietin (EPO)</option><option>Basic Health Check</option><option>Wellness Check</option><option>Complete Screening</option></select></div>
+            <div><input id="date" required type="date"></div>
+            <div><select id="time" required><option value="">Preferred time</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+            <div><select id="collection"><option>At Diagnostic Centre</option><option>Home Sample Collection</option></select></div>
+            <div class="field-full"><textarea id="notes" rows="3" placeholder="Additional notes (optional)"></textarea></div>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Booking on WhatsApp</button>
+        </form>
+      </div>
+
+      <div class="form-card" id="reports">
+        <h3>📄 Online Reports</h3><p>Use this form to request help with your laboratory report. Do not enter sensitive medical information here.</p>
+        <form id="reportForm">
+          <div class="fields">
+            <div><input id="reportName" required placeholder="Patient name"></div>
+            <div><input id="reportId" required placeholder="Report / Lab ID"></div>
+            <div class="field-full"><input id="reportMobile" required type="tel" pattern="[0-9]{10}" placeholder="Registered mobile number"></div>
+          </div>
+          <button class="btn btn-outline" type="submit">Request Report Assistance</button>
+        </form>
+        <div style="margin-top:22px;padding:15px;background:#eef8ff;border-radius:12px;font-size:13px;color:#557083">
+          For privacy and security, report files should be shared only through the diagnostic centre's approved communication channel.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div>
+      <h2>Healthcare made simpler.</h2>
+      <p>SAI Bhavani Diagnostic Centre serves patients in Sanath Nagar, Hyderabad with convenient diagnostic testing and booking support.</p>
+      <p>For test availability, prices, preparation requirements, home collection and reports, please contact the centre directly.</p>
+    </div>
+    <div class="checks">
+      <div><span>✓</span>Multiple diagnostic tests</div>
+      <div><span>✓</span>Home sample collection</div>
+      <div><span>✓</span>Easy booking support</div>
+      <div><span>✓</span>Local Hyderabad service</div>
+      <div><span>✓</span>Phone assistance</div>
+      <div><span>✓</span>WhatsApp contact</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head"><h2>Contact Us</h2><p>Reach SAI Bhavani Diagnostic Centre for appointments and information.</p></div>
+    <div class="contact-grid">
+      <a class="contact-box" href="tel:+919849247320"><div class="big">☎️</div><h3>Call Us</h3><p>98492 47320</p></a>
+      <a class="contact-box" href="https://wa.me/919849247320" target="_blank" rel="noopener"><div class="big">💬</div><h3>WhatsApp</h3><p>Chat with the centre</p></a>
+      <div class="contact-box"><div class="big">📍</div><h3>Location</h3><p>Sanath Nagar, Hyderabad, Telangana, India</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <p>© <span id="year"></span> SAI Bhavani Diagnostic Centre. All rights reserved.</p>
+    <p>Sanath Nagar, Hyderabad • Call: 98492 47320</p>
+  </div>
+</footer>
+
+<div class="floating">
+  <a class="float-btn wa" href="https://wa.me/919849247320" target="_blank" rel="noopener" aria-label="WhatsApp">◉</a>
+  <a class="float-btn call" href="tel:+919849247320" aria-label="Call">☎</a>
+</div>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <div class="ok">✅</div><h3 id="modalTitle">Booking Prepared</h3><p id="modalText"></p>
+    <button class="btn btn-primary" id="closeModal">Close</button>
+  </div>
+</div>
+
+<script>
+  const notifyNumber = "919390597938";
+  const publicNumber = "+919849247320";
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const menuBtn = document.getElementById("menuBtn");
+  const navlinks = document.getElementById("navlinks");
+  menuBtn.addEventListener("click", () => navlinks.classList.toggle("open"));
+  navlinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => navlinks.classList.remove("open")));
+
+  const cards = [...document.querySelectorAll(".test-card")];
+  const search = document.getElementById("testSearch");
+  const filter = document.getElementById("testFilter");
+
+  function filterTests(){
+    const q = search.value.toLowerCase().trim();
+    const cat = filter.value;
+    cards.forEach(card => {
+      const text = card.innerText.toLowerCase();
+      const categoryMatch = cat === "all" || card.dataset.category === cat;
+      card.classList.toggle("hidden", !(categoryMatch && text.includes(q)));
+    });
+  }
+  search.addEventListener("input", filterTests);
+  filter.addEventListener("change", filterTests);
+
+  document.querySelectorAll(".test-card").forEach(card => {
+    card.style.cursor = "pointer";
+    card.addEventListener("click", () => {
+      document.getElementById("testChoice").value = card.querySelector("h3").textContent;
+      document.getElementById("booking").scrollIntoView({behavior:"smooth"});
+    });
+  });
+
+  document.querySelectorAll(".packageBtn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.getElementById("testChoice").value = btn.dataset.package;
+      document.getElementById("booking").scrollIntoView({behavior:"smooth"});
+    });
+  });
+
+  const today = new Date();
+  const localDate = new Date(today.getTime() - today.getTimezoneOffset()*60000).toISOString().split("T")[0];
+  document.getElementById("date").min = localDate;
+
+  const modal = document.getElementById("modal");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalText = document.getElementById("modalText");
+  document.getElementById("closeModal").onclick = () => modal.classList.remove("show");
+  modal.addEventListener("click", e => { if(e.target === modal) modal.classList.remove("show"); });
+
+  document.getElementById("bookingForm").addEventListener("submit", e => {
+    e.preventDefault();
+    const name = document.getElementById("patientName").value.trim();
+    const mobile = document.getElementById("mobile").value.trim();
+    const test = document.getElementById("testChoice").value;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const collection = document.getElementById("collection").value;
+    const notes = document.getElementById("notes").value.trim();
+
+    const message =
+      `*SAI Bhavani Diagnostic Centre - New Booking*%0A%0A` +
+      `Patient: ${encodeURIComponent(name)}%0A` +
+      `Mobile: ${encodeURIComponent(mobile)}%0A` +
+      `Test/Package: ${encodeURIComponent(test)}%0A` +
+      `Date: ${encodeURIComponent(date)}%0A` +
+      `Preferred Time: ${encodeURIComponent(time)}%0A` +
+      `Collection: ${encodeURIComponent(collection)}%0A` +
+      `Notes: ${encodeURIComponent(notes || "None")}%0A%0A` +
+      `Location: Sanath Nagar, Hyderabad`;
+
+    window.open(`https://wa.me/${notifyNumber}?text=${message}`, "_blank");
+    modalTitle.textContent = "Booking Ready";
+    modalText.textContent = "WhatsApp has been opened with the booking details. Please tap Send in WhatsApp to notify the centre.";
+    modal.classList.add("show");
+  });
+
+  document.getElementById("reportForm").addEventListener("submit", e => {
+    e.preventDefault();
+    const name = document.getElementById("reportName").value.trim();
+    const id = document.getElementById("reportId").value.trim();
+    const mobile = document.getElementById("reportMobile").value.trim();
+    const message = `Hello SAI Bhavani Diagnostic Centre. I need help with my report.%0APatient: ${encodeURIComponent(name)}%0AReport/Lab ID: ${encodeURIComponent(id)}%0ARegistered mobile: ${encodeURIComponent(mobile)}`;
+    window.open(`https://wa.me/${publicNumber.replace("+","")}?text=${message}`, "_blank");
+  });
+</script>
+</body>
+</html>
